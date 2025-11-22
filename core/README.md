@@ -1,6 +1,6 @@
 # Task Management System with MCP Server
 
-A reusable task management system for AI assistants (Claude, GPT, etc.) with intelligent deduplication and organization.
+A reusable task management system for AI assistants (Gemini, GPT, etc.) with intelligent deduplication and organization.
 
 ## Core Features
 
@@ -29,7 +29,7 @@ touch BACKLOG.md
 
 ### 2. Configure
 
-Copy `CLAUDE_TEMPLATE.md` to `CLAUDE.md` and customize:
+Copy `GEMINI_TEMPLATE.md` to `GEMINI.md` and customize:
 - Categories for your workflow
 - Priority definitions
 - Personal goals (optional)
@@ -44,7 +44,7 @@ python manager_ai_mcp/server_core.py
 
 Tell your AI assistant:
 ```
-"Read CLAUDE.md for instructions on managing my tasks"
+"Read GEMINI.md for instructions on managing my tasks"
 ```
 
 ## System Architecture
@@ -56,7 +56,7 @@ task-manager/
 ├── Tasks/                  # Individual task files
 ├── CRM/                    # Contact files
 ├── BACKLOG.md             # Unstructured notes
-├── CLAUDE.md              # AI instructions (from template)
+├── GEMINI.md              # AI instructions (from template)
 └── config.yaml            # Optional configuration
 ```
 
@@ -142,7 +142,7 @@ The system is designed to be extended:
 
 - **Categories**: Add your own in config.yaml
 - **Priorities**: Define what's urgent for you
-- **Workflows**: Modify CLAUDE.md instructions
+- **Workflows**: Modify GEMINI.md instructions
 - **Integrations**: Extend MCP server with new tools
 
 ## Example Workflow
@@ -175,7 +175,7 @@ Your personal data stays local:
 - Tasks/
 - CRM/
 - BACKLOG.md
-- Personal CLAUDE.md
+- Personal GEMINI.md
 
 ## Contributing
 
@@ -191,4 +191,4 @@ MIT - Use freely for personal or commercial projects.
 
 ## Credits
 
-Built for use with AI assistants like Claude, GPT, and others that support tool calling.
+Built for use with AI assistants like Gemini, GPT, and others that support tool calling.

@@ -35,7 +35,7 @@ personal-os/
 ├── Resources/               # Context materials for AI
 ├── BACKLOG.md              # Unstructured notes/ideas to process
 ├── GOALS.md                # Your goals & strategic priorities
-└── CLAUDE.md               # This file - AI agent instructions
+└── GEMINI.md               # This file - AI agent instructions
 ```
 
 ### Directory Details:
@@ -296,7 +296,7 @@ When drafting stakeholder communication or emails:
 - No "Remember, it's not about X but Y"
 - Minimal emojis (1-2 max per post)
 - No em dashes
-- Lead with the interesting fact/observation, not throat-clearing
+- Lead with the interesting fact/observation, not throat- clearing
 
 **Good example:**
 "We analyzed 500 product launches. The ones that succeeded had one thing in common: they shipped an MVP in under 6 weeks. The ones that failed? Average time to MVP was 6 months."
@@ -314,7 +314,7 @@ For each backlog item, ask:
 ## Context Integration
 
 ### Goals.md Reference
-Always consider the user's goals and priorities when processing tasks. Use Goals.md to:
+Always consider the user's goals and priorities whenprocessing tasks. Use Goals.md to:
 - Inform priority levels (P0/P1 for quarterly objectives, P2/P3 for supporting work)
 - Flag tasks that don't align with stated objectives
 - Proactively suggest tasks that advance goals

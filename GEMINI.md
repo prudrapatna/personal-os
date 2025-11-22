@@ -8,7 +8,7 @@ project/
 ├── Knowledge/    # Briefs, research, specs, meeting notes
 ├── BACKLOG.md    # Raw capture inbox
 ├── GOALS.md      # Goals, themes, priorities
-└── CLAUDE.md     # Your instructions
+└── GEMINI.md     # Your instructions
 ```
 
 ## Backlog Flow
@@ -89,3 +89,35 @@ Tie to goals and reference material.
 - `get_system_status`
 
 Keep the user focused on meaningful progress, guided by their goals and the context stored in Knowledge/.
+
+# Using Gemini CLI for Large Codebase Analysis
+
+When analyzing large codebases or multiple files, use the Gemini CLI with its massive context window.
+
+## File and Directory Inclusion
+
+Use the `@` syntax to include files in your Gemini prompts:
+
+```bash
+# Single file analysis
+gemini -p "@src/main.py Explain this file's purpose"
+
+# Multiple files
+gemini -p "@package.json @src/index.js Analyze dependencies"
+
+# Entire directory
+gemini -p "@src/ Summarize the architecture"
+
+# Or use --all_files flag
+gemini --all_files -p "Analyze the project structure"
+```
+
+## When to Use Gemini CLI
+
+Use `gemini -p` when:
+- Analyzing entire codebases or large directories
+- Comparing multiple large files
+- Need to understand project-wide patterns
+- Current context window is insufficient
+- Working with files totaling more than 100KB
+- Verifying feature implementations across the codebase

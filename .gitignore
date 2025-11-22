@@ -48,3 +48,6 @@ test_*.py
 .mcp_cache/
 *.pid
 *.lock
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
